@@ -2,15 +2,59 @@
 多标签
 命令：
 
+首先下载multi.rar，把要预测的序列文件拷贝到multi文件夹下，假如你的序列文件的
+名字为test.txt，则在windows操作系统下通过CMD进入到multi文件夹下输入如下命令：
+java -jar Mul_fat.jar test.txt，会得到predict.txt文件即为你的预测结果文件。
 
-java -jar Mul_fat.jar test.txt
+此预测使用43个类，每个类均为GO数据库中序列数大于一千条序列并且是经常出现的类。
+43个类整理如下：
 
+Class1	GO:0000981	DNA-binding transcription factor activity, RNA polymerase II-specific
+Class2	GO:0001135	RNA polymerase II transcription regulator recruiting activity
+Class3	GO:0003700	DNA-binding transcription factor activity
+Class4	GO:0003723	RNA binding
+Class5	GO:0003735	structural constituent of ribosome
+Class6	GO:0004519	endonuclease activity
+Class7	GO:0004674	protein serine/threonine kinase activity
+Class8	GO:0004675	transmembrane receptor protein serine/threonine kinase activity
+Class9	GO:0004842	ubiquitin-protein transferase activity
+Class10	GO:0005622	intracellular
+Class11	GO:0005634	nucleus
+Class12	GO:0005730	nucleolus
+Class13	GO:0005737	cytoplasm
+Class14	GO:0005739	mitochondrion
+Class15	GO:0005783	endoplasmic reticulum
+Class16	GO:0005794	Golgi apparatus
+Class17	GO:0005829	cytosol
+Class18	GO:0005886	plasma membrane
+Class19	GO:0005887	integral component of plasma membrane
+Class20	GO:0006355	regulation of transcription, DNA-templated
+Class21	GO:0006357	regulation of transcription by RNA polymerase II
+Class22	GO:0006412	translation
+Class23	GO:0006468	protein phosphorylation
+Class24	GO:0006508	proteolysis
+Class25	GO:0006952	defense response
+Class26	GO:0007165	signal transduction
+Class27	GO:0007166	cell surface receptor signaling pathway
+Class28	GO:0009451	 RNA modification 
+Class29	GO:0009506	plasmodesma
+Class30	GO:0016020	membrane
+Class31	GO:0016021	integral component of membrane 
 
+Class32	GO:0016709	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, NAD(P)H                           as one donor, and incorporation of one atom of oxygen
+Class33	GO:0022625	cytosolic large ribosomal subunit
+Class34	GO:0030154	cell differentiation 
+Class35	GO:0035556	intracellular signal transduction
+Class36	GO:0043161	proteasome-mediated ubiquitin-dependent protein catabolic process
+Class37	GO:0043231	intracellular membrane-bounded organelle 
+Class38	GO:0043565	sequence-specific DNA binding
+Class39	GO:0044212	transcription regulatory region DNA binding
+Class40	GO:0046658	anchored component of plasma membrane
+Class41	GO:0061630	 ubiquitin protein ligase activity
+Class42	GO:0080043	quercetin 3-O-glucosyltransferase activity 
+Class43	GO:0080044	quercetin 7-O-glucosyltransferase activity
 
-
-
-
-188维特征解释
+特征提取使用的188维特征：
 
 前20维，分别是20种氨基酸（按字母序ACDEFGHIKLMNPQRSTVWY），在序列中的含量。（出现个数/序列长度）
 
