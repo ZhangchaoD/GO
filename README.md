@@ -4,7 +4,7 @@
 
 首先下载multi.rar，把要预测的序列文件拷贝到multi文件夹下，假如你的序列文件的
 名字为test.txt，则在windows操作系统下通过CMD进入到multi文件夹下输入如下命令：
-java -jar Mul_fat.jar test.txt，会得到predict.txt文件即为你的预测结果文件。
+java -jar MultiLabel.jar test.txt，会得到predict.txt文件即为你的预测结果文件。
 
 此预测使用43个类，每个类均为GO数据库中序列数大于一千条序列并且是经常出现的类。
 43个类整理如下：
